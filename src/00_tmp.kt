@@ -1,5 +1,3 @@
-package chap02
-
 import kotlin.math.PI
 import kotlin.math.abs
 
