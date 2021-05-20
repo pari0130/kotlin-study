@@ -1,5 +1,4 @@
-import kotlin.math.PI
-import kotlin.math.abs
+package STEP09
 
 // https://youtu.be/ZMOsbFCEeCY?list=PLQdnHjXZyYadiw5aV3p6DwUdXV2bZuhlN
 
@@ -24,7 +23,7 @@ open class Animal(var name: String, var age: Int, var type: String) {
     }
 }
 
-// 아규먼트 뒤 : 에 상속할 상위 클래스 Animal 추가 / 아규먼츠는 모두 적어야 함
+// 아규먼트 뒤 : 에 상속할 상위 클래스 `09`.Animal 추가 / 아규먼츠는 모두 적어야 함
 class Dog(name: String, age: Int) : Animal(name, age, "개") {
     fun bark() {
         println("멍멍")

@@ -1,5 +1,4 @@
-import kotlin.math.PI
-import kotlin.math.abs
+package STEP06
 
 // https://youtu.be/ZMOsbFCEeCY?list=PLQdnHjXZyYadiw5aV3p6DwUdXV2bZuhlN
 

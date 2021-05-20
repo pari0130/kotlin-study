@@ -1,7 +1,4 @@
-package chap02
-
-import kotlin.math.PI
-import kotlin.math.abs
+package STEP02
 
 // https://youtu.be/ZMOsbFCEeCY?list=PLQdnHjXZyYadiw5aV3p6DwUdXV2bZuhlN
 // 형변환과 배열

@@ -1,11 +1,10 @@
-import kotlin.math.PI
-import kotlin.math.abs
+package STEP01
 
 // https://youtu.be/ZMOsbFCEeCY?list=PLQdnHjXZyYadiw5aV3p6DwUdXV2bZuhlN
 // 변수와 자료형
 
 fun main() {
-    val a: Int = 1
+    val a: Int = 12345
     val b: Int? = null // 변수 선언 문 뒤에 ? 물음표는 nullable 의미
 
     println(a)
