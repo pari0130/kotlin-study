@@ -15,7 +15,7 @@ fun main() {
     println(a === c) // true
 
     println(a == d) // false
-    println(a === d) // flase
+    println(a === d) // flase 
 }
 
 class Product(val name: String, val price: Int) {
