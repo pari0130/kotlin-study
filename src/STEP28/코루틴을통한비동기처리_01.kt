@@ -8,3 +8,5 @@ fun main() {
     // Dispatchers.Main = 메인 스레드에서 동작
     // async {} await{}
 }
+
+// 브런치 테스트를 위한 마스터 커밋
