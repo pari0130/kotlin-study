@@ -20,4 +20,31 @@ fun main() {
     b?.run{
         println(toUpperCase())
     }
+
+    var c = 1
+    var d = c?.let{it} ?: 0
+    var e = c ?: "test"
+
+    var listTest = mutableListOf(1)
+    println(listTest.isEmpty())
+    listTest.clear()
+    println(listTest.isEmpty())
+    var listTest2 = 12345
+    listTest2?.let{
+        println("not null empty list")
+    }.whenNull{
+        println("null empty ")
+    }
+    println(listTest)
+
+    var listTest3 = null
+    listTest3?.let{
+        println("not null empty list 2")
+    } ?: run{
+        println("null empty 2")
+    }
+    println(listTest)
 }
+
+
+fun <T> T?.whenNull(block: () -> Unit) = this ?: block()
