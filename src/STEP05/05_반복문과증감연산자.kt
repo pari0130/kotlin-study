@@ -2,7 +2,7 @@ package STEP05
 
 // https://youtu.be/ZMOsbFCEeCY?list=PLQdnHjXZyYadiw5aV3p6DwUdXV2bZuhlN
 
-fun main() {
+fun main2() {
 
     // 조건형 반복문
     var a = 0
@@ -40,5 +40,32 @@ fun main() {
     for(i in 'a'..'e'){
         println(i)
     }
+}
+
+fun main() {
+    cloneTest()
+}
+
+
+internal class Point(var x: Int, var y: Int) : Cloneable {
+    override fun toString(): String {
+        return "x : $x, y : $y"
+    }
+
+    public override fun clone(): Any {
+        var obj: Any? = null
+        try {
+            obj = super.clone()
+        } catch (e: CloneNotSupportedException) {
+        }
+        return obj!!
+    }
+}
+
+fun cloneTest() {
+    val original = Point(3, 5)
+    val copy = original.clone() as Point
+    println(original)
+    println(copy)
 }
 
